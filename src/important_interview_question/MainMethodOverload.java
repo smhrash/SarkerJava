@@ -11,12 +11,15 @@ public class MainMethodOverload {
         main(30,40);
     }
     public static void main(String args) {
+
         System.out.println("Main Method without array");
     }
     public static void main(int a) {
+
         System.out.println("Main Method with single parameter");
     }
     public static void main(int a, int b) {
+
         System.out.println("Main Method with double parameter");
     }
 }

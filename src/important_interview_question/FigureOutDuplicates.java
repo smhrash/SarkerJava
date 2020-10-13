@@ -19,9 +19,10 @@ public class FigureOutDuplicates {
                 }
             }
         }
+        System.out.println("========================================");
 
-        // 2. using has set and this is a good solution
-        Set<String> store = new HashSet<>();
+        // 2. using hash set and this is a good solution
+        Set <String> store = new HashSet<>();
         for (String name : names) {
             if (store.add(name) == false) {
                 System.out.println("The duplicate value is " + name);

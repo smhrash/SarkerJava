@@ -4,54 +4,63 @@ public class StringManipulation {
 
     public static void main(String[] args) {
 
-        String str = "It will rain as soon as we expect";
-        String str1 = "It will rain As soon as we expect";
+        String st = "United States of America is a large country";
+        String st1 = "United States Of America is a large country";
 
-        System.out.println(str.length());
-        System.out.println(str.charAt(10));
-        System.out.println(str.indexOf('i')); // first occurrence of i
-        System.out.println(str.indexOf('i',str.indexOf('i')+1));// second occurrence of i
-        System.out.println(str.indexOf("as"));
-        System.out.println(str.indexOf("as",str.indexOf("as")+1));
-        System.out.println(str.indexOf("hello")); // if string doesn't exit, it will show result -1
+        // length of a String
+        System.out.println(st.length());
+        // find out character by number
+        System.out.println(st.charAt(7));
+        // find out character position
+        System.out.println(st.indexOf('S'));
+        // find out String position
+        System.out.println(st.indexOf("Sta"));
+        // find out first occurrence of a character
+        System.out.println(st.indexOf("i"));
+        // find out second occurrence of a character
+        System.out.println(st.indexOf('i',st.indexOf('i')+1));
+        // find out third occurrence of a character
+        System.out.println(st.indexOf('i',st.indexOf('i',st.indexOf('i')+1)+1));
+        System.out.println(st.charAt(25));
+        // If any String is not available, it will return -1
+        System.out.println(st.indexOf("hello"));
+        // Case sensitivity
+        System.out.println(st.equals(st1));
+        // Use Case ignore
+        System.out.println(st.equalsIgnoreCase(st1));
+        // Print a part of a String
+        System.out.println(st.substring(17,24));
+        System.out.println(st.charAt(17));
+        System.out.println(st.charAt(23));
 
-        // String comparison
+        String st2 ="    United States   ";
+        // trim method remove before and after spaces
+        System.out.println(st2.trim());
 
-        System.out.println(str.equals(str1));
-        System.out.println(str.equalsIgnoreCase(str1));
+        // Replacement of a String
+        System.out.println(st.replace("States","Kingdom"));
+        // replace middle space of two String
+        System.out.println(st2.replace(" ",""));
 
-        // sub String
+        // split method
+        String st3= "United_States_Of_America";
+        String [] st4 = st3.split("_");
 
-        System.out.println(str.substring(0,12));
-        System.out.println(str.substring(13));
+        for (String s:st4){
+            System.out.print(s+" ");
 
-        // trim
-
-        String s= "   Sarker Rashid  ";
-        System.out.println(s.trim());
-        System.out.println(s.replace(" ",""));
-        System.out.println(s.replace(""," "));
-        System.out.println(s.replace(" ", "   "));
-
-        String date= "06-20-2020";
-        System.out.println(date.replace("-","/"));
-
-        // split
-
-        String test="Hello_World_Test_Selenium";
-        String testVal [] = test.split("_");
-        for (int i = 0; i <testVal.length; i++){
-            System.out.println(testVal [i]);
         }
+        // Concat
+        System.out.println(st3.concat("ns"));
 
-        // concatenate
-        String s2= "care";
-        System.out.println(s2.concat("s"));
+        // others
+        String a = "Banana";
+        String b = "Tomato";
+        int x = 20;
+        int y = 10;
 
-        String a= "Sarker";
-        String b="Rashid";
-        int x= 300;
-        int y = 200;
+        System.out.println(a+b);
+        System.out.println(x+y);
         System.out.println(a+b+x+y);
         System.out.println(x+y+a+b);
         System.out.println(a+b+(x+y));
