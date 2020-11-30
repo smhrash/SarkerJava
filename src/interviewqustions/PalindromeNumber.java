@@ -1,6 +1,6 @@
 package interviewqustions;
 
-public class PallindromeNumber {
+public class PalindromeNumber {
 
     public static void main(String[] args) {
         int num = 121;
@@ -14,9 +14,9 @@ public class PallindromeNumber {
         }
 
         if (actualNum == rev) {
-            System.out.println(actualNum + " is a pallindrome");
+            System.out.println(actualNum + " is a palindrome");
         } else {
-            System.out.println(actualNum + " is not a pallindrome");
+            System.out.println(actualNum + " is not a palindrome");
         }
     }
 }

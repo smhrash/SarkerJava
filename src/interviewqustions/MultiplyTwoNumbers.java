@@ -1,6 +1,6 @@
 package interviewqustions;
 
-public class Questions3 {
+public class MultiplyTwoNumbers {
 
     public static void main(String[] args) {
 

@@ -1,27 +1,28 @@
 package practiceDaily;
 
+import java.awt.*;
+import java.text.Collator;
+import java.util.*;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class DailyPractice {
 
     public static void main(String[] args) {
 
-        // fibonacci series 0 1 1 2 3 5 8 13 21 34 55 89 144
 
-        int num = 20;
-        int num1 = 0;
-        int num2 = 1;
-        int sum= 0;
+        List<Integer> arrayList =
+                new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 5, 4));
 
-        for (int i = 0; i <num; i++){
+        Set<Integer> numSet = new HashSet<>(arrayList);
 
-
-            System.out.print(sum+" ");
-            sum = num1 + num2;
-            num1 = num2;
-            num2 = sum;
+        System.out.println(numSet);
 
 
 
-        }
+
+
+
 
     }
 }

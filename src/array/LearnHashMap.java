@@ -39,6 +39,13 @@ public class LearnHashMap {
 
         for (Map.Entry <Integer,String> en:values){
             System.out.println("Student's ID: "+en.getKey()+ " and Name: "+en.getValue());
+
+            System.out.println("============= Advanced way to fetch the value ================");
+
+           students.forEach((k,v) ->{
+               System.out.println("Student's id: "+k+" and Student's name: "+v);
+           });
+
         }
     }
 }

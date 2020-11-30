@@ -1,6 +1,6 @@
 package interviewqustions;
 
-public class Questions2 {
+public class SumOfTwoNumbers {
 
     public static void main(String[] args) {
 
